@@ -8,7 +8,7 @@ $header-color: #323530;
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Epilogue', sans-serif; 
+  font-family: 'Epilogue', sans-serif;
 }
 
 a {
@@ -84,14 +84,30 @@ nav {
 .cf { zoom:1; }
 
 // Content
-section > * + * {
+section div {
+  top: 35px;
+  padding: 10px 20px;
+  position: relative;
+  line-height: 1.6;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+section div > * + * {
   margin-top: 1rem;
 }
 
 .showcase {
-  top: 30px;
-  position: relative;
-  height: 50vh;
+  margin: 0;
+  padding: 0;
+  height: 75vh;
   width: 100%;
   background: url(../img/pexels-pixabay-158827.jpg) no-repeat bottom/cover;
   display: grid;
@@ -101,8 +117,51 @@ section > * + * {
     font-family: 'Bungee Shade', cursive;
     font-size: 3.8rem;
     color: $header-color;
-    text-align: center;
-    margin-top: 10px;
+    line-height: 4rem;
+    margin-top: 0px;
   }
+}
+
+.about {
+  background: lightblue;
+  overflow: auto;
+
+  p {
+    width: 85%;
+    margin: 0 auto;
+  
+    &:nth-of-type(odd) {
+      float: left;
+      text-align: left;
+    }
+    &:nth-of-type(even) {
+      float: right;
+      text-align: right;
+    }
+  }
+
+  img {
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.contact {
+  background-color: #78AABC;
+
+  ul {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+footer {
+  top: 35px;
+  position: relative;
+  text-align: center;
+  height: 10px;
+  padding: 10px;
+  background: $menu-color
 }
 

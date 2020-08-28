@@ -88,14 +88,30 @@ nav a#openup i {
   zoom: 1;
 }
 
-section > * + * {
+section div {
+  top: 35px;
+  padding: 10px 20px;
+  position: relative;
+  line-height: 1.6;
+}
+
+section div h1 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+section div img {
+  max-width: 100%;
+}
+
+section div > * + * {
   margin-top: 1rem;
 }
 
 .showcase {
-  top: 30px;
-  position: relative;
-  height: 50vh;
+  margin: 0;
+  padding: 0;
+  height: 75vh;
   width: 100%;
   background: url(../img/pexels-pixabay-158827.jpg) no-repeat bottom/cover;
   display: -ms-grid;
@@ -107,7 +123,52 @@ section > * + * {
   font-family: 'Bungee Shade', cursive;
   font-size: 3.8rem;
   color: #323530;
+  line-height: 4rem;
+  margin-top: 0px;
+}
+
+.about {
+  background: lightblue;
+  overflow: auto;
+}
+
+.about p {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.about p:nth-of-type(odd) {
+  float: left;
+  text-align: left;
+}
+
+.about p:nth-of-type(even) {
+  float: right;
+  text-align: right;
+}
+
+.about img {
+  height: 30vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact {
+  background-color: #78AABC;
+}
+
+.contact ul {
+  width: 60%;
+  margin: 0 auto;
+}
+
+footer {
+  top: 35px;
+  position: relative;
   text-align: center;
-  margin-top: 10px;
+  height: 10px;
+  padding: 10px;
+  background: #333;
 }
 /*# sourceMappingURL=style.css.map */
