@@ -16,7 +16,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: $offwhite;
+	
 }
 
 // Navbar
@@ -52,6 +52,7 @@ nav {
     text-indent: 25px;
     background: #333;	 
     border-bottom: 1px solid $menu-border;
+    color: $offwhite;
   }  	
 
   a:hover {
@@ -175,6 +176,9 @@ footer {
   text-align: center;
   height: 10px;
   padding: 10px;
-  background: $menu-color
+  background: $menu-color;
+  a {
+    color: $offwhite;
+  }
 }
 
