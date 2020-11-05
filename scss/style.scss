@@ -90,9 +90,12 @@ nav {
 // Content
 section div {
   top: 35px;
+  width: 70%;
   padding: 10px 20px;
+  margin: auto;
   position: relative;
   line-height: 1.6;
+  // center the box
 
   h1 {
     text-align: center;
@@ -157,7 +160,7 @@ section div > * + * {
 }
 
 .contact {
-  margin: 15px;
+  // margin: 15px;
   margin-bottom: 35px;
   padding: 0 20px;
   border: $menu-color 1px solid;
@@ -182,3 +185,12 @@ footer {
   }
 }
 
+@media (max-width: 450px) {
+  section div {
+    width: 90%;
+  }
+
+  .showcase h1 {
+    font-size: 3rem;
+  }
+}

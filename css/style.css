@@ -91,7 +91,9 @@ nav a#openup i {
 
 section div {
   top: 35px;
+  width: 70%;
   padding: 10px 20px;
+  margin: auto;
   position: relative;
   line-height: 1.6;
 }
@@ -161,7 +163,6 @@ section div > * + * {
 }
 
 .contact {
-  margin: 15px;
   margin-bottom: 35px;
   padding: 0 20px;
   border: #333 1px solid;
@@ -185,5 +186,14 @@ footer {
 
 footer a {
   color: #eefeee;
+}
+
+@media (max-width: 450px) {
+  section div {
+    width: 90%;
+  }
+  .showcase h1 {
+    font-size: 3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
